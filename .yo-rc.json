@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "be.planty.compare.uaa.server",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "uaa",
+    "baseName": "PlantyCompareUaaServer",
+    "packageName": "be.planty.compare.uaa.server",
+    "packageFolder": "be/planty/compare/uaa/server",
+    "serverPort": "9999",
+    "authenticationType": "uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NzAzOTRkYzY0MTk3ZmM5MzE2ZDIwZmI0YTBjZGU5NGJiNzRhM2M4Y2ZmZWIyZjU4NDI1NjE3OGZkODY5MmFiNGJhN2UyZmNjNTlhM2UwYzA3OTIzZDBkMTI5OTExMGFmNWZmOTkyY2RjNjNhMTFjMWY1OGU4ZDllMzlkNmZkMzY=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "skipClient": true
+  }
+}

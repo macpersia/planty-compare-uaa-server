@@ -1,0 +1,16 @@
+version: '2'
+services:
+  plantycompareuaaserver-mongodb:
+    image: mongo:4.0.9
+    ports:
+      - '27017:27017'
+    command: mongos --configdb plantycompareuaaserver-mongodb-config
+  plantycompareuaaserver-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --replSet rs1 --noprealloc --smallfiles
+  plantycompareuaaserver-mongodb-config:
+    image: mongo:4.0.9
+    container_name: plantycompareuaaserver-mongodb-config
+    command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db
